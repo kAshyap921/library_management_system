@@ -1,0 +1,6 @@
+user_id,name,password,role,status
+ADMIN001,Admin,admin123,admin,verified
+7A10E27A,Dhiraj,5121,member,verified
+732B7F85,kashyap,1234,member,verified
+B9949610,ADMIN002,admin1234,member,pending
+5D1BB4FD,DK,kashyap21,member,verified

@@ -1,0 +1,6 @@
+book_id,title,writer,category,book_type,available
+0A08104C,Python Basics,Guido Van,programming,text,True
+B2C3D4E5,Django Guide,Adrian Holovaty,Web,text,True
+C3D4E5F6,Clean Code,Robert Martin,Programming,text,False
+D4E5F6G7,Learn Python,Corey Schafer,Programming,audio,True
+E5F6G7H8,JS Fundamentals,Kyle Simpson,Web,audio,False
