@@ -16,7 +16,7 @@ class LibraryService:
 
     def __load_books(self):
         # Load books from CSV storage into memory at startup
-        # rows = DBHandler.load("books")
+        rows = DBHandler.load("books")
         rows = CSVHandler.load(BOOKS_CSV)
         for row in rows:
             book = BookFactory.from_dict(row)
@@ -25,7 +25,7 @@ class LibraryService:
     def __save_books(self):
         # Synchronize in-memory changes back to persistent storage
         data = [b.to_dict() for b in self.__books.values()]
-        # DBHandler.save("books", data)
+        DBHandler.save("books", data)
         CSVHandler.save(BOOKS_CSV, data, BOOK_FIELDS)
 
     def add_book(self, admin_user, title, writer, category, book_type):

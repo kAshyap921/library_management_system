@@ -24,7 +24,7 @@ def header(text):
 
 def setup_admin_if_needed():
     rows = DBHandler.load("users")
-    # rows = CSVHandler.load(USERS_CSV)
+    rows = CSVHandler.load(USERS_CSV)
     admins = [r for r in rows if r.get("role") == ROLE_ADMIN]
     if not admins:
         default_admin = {
