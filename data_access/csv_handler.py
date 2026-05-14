@@ -2,7 +2,7 @@ import csv
 import os
 
 
-# only sirf save aur load
+# only  save and load
 
 class CSVHandler:
 
@@ -15,7 +15,7 @@ class CSVHandler:
                 reader = csv.DictReader(f)
                 return list(reader)
         except Exception as e:
-            print(f"File padhne mein error: {e}")
+            print(f"error while reading the file: {e}")
             return []
 
     @staticmethod
@@ -27,7 +27,7 @@ class CSVHandler:
                 writer.writeheader()
                 writer.writerows(data)
         except Exception as e:
-            print(f"File save karne mein error: {e}")
+            print(f"Error while saving the file: {e}")
 
     @staticmethod
     def append_row(filepath, row, fieldnames):
@@ -41,7 +41,7 @@ class CSVHandler:
                     writer.writeheader()
                 writer.writerow(row)
         except Exception as e:
-            print(f"Row add karne mein error: {e}")
+            print(f"Error occurred while adding the row: {e}")
 
     @staticmethod
     def find_one(filepath, key, value):

@@ -267,7 +267,7 @@ def admin_menu(user, library_svc, search_svc, rental_svc):
             print(f"\n  Admin logged out.")
             break
 
-# Main entry point 
+#Main entry point 
 
 def main():
     # Initialize services — shared across the application

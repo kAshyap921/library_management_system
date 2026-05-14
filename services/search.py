@@ -5,7 +5,7 @@ from exceptions.exceptions import BookNotFoundError
 class SearchService:
 
     def __init__(self, library_service):
-        # Library service ka reference chahiye books lene ke liye
+        #"need a reference to LibraryService to borrow books"
         self.__library = library_service
 
     def search_by_writer(self, writer_name):
